@@ -56,11 +56,15 @@ button {
     display: flex;
 }
 
-.flex-col {
+.f-col {
     flex-direction: column;
 }
 
-.flex-w {
+.f-gap {
+    gap: 3vw;
+}
+
+.f-wrap {
     flex-wrap: wrap;
 }
 
@@ -85,21 +89,23 @@ button {
 .l-container {
     width: 90%;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1080px;
 }
 
 .container {
-    width: 60%;
-    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 920px;
 }
 
 .s-container {
-    width: 40%;
-    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 720px;
 }
 
-.col-30 {
-    width: calc(100%/3);
+.smooth-corners {
+    border-radius: 5vw;
 }
 
 @media screen and (min-width: 768px) {
@@ -107,17 +113,17 @@ button {
     .l-container {
         width: 90%;
         margin: 0 auto;
-        max-width: 1200px;
+        max-width: 1080px;
     }
     
     .container {
-        width: 60%;
-        max-width: 1000px;
+        width: 90%;
+        max-width: 920px;
     }
     
     .s-container {
         width: 40%;
-        max-width: 800px;
+        max-width: 720px;
     }
 
 }
@@ -127,19 +133,164 @@ button {
     .l-container {
         width: 90%;
         margin: 0 auto;
-        max-width: 1200px;
+        max-width: 1080px;
     }
     
     .container {
         width: 60%;
-        max-width: 1000px;
+        max-width: 920px;
     }
     
     .s-container {
         width: 40%;
-        max-width: 800px;
+        max-width: 720px;
+    }
+
+}
+
+/* Layout - Services Section ********************/
+
+.col-services {
+    background-color: var(--lightcyan-p);
+    width: 100%;
+        
+    /* debug */
+    min-height: 300px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .col-services {
+        width: calc(100%/3);
     }
     
+    .col-services:first-child {
+        flex-grow: 2;
+        /* width: 65%; */
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+ 
+    .col-services {
+        flex-grow: 1;
+        width: calc(100%/3.2);
+    }
+    
+    .col-services:first-child {
+        flex-grow: 2;
+        /* width: calc(100%); */
+    }
+
+}
+
+/* Layout - Hero Section ********************/
+
+
+
+/* Layout - Testimonials Section ********************/
+
+.col-testimonials {
+    background-color: var(--lightcyan-p);
+    width: 100%;
+        
+    /* debug */
+    min-height: 300px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .l-container {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1080px;
+    }
+    
+    .container {
+        width: 90%;
+        max-width: 920px;
+    }
+    
+    .s-container {
+        width: 40%;
+        max-width: 720px;
+    }
+
+    .col-services {
+        width: calc(100%/3);
+    }
+    
+    .col-services:first-child {
+        flex-grow: 2;
+        /* width: 65%; */
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .l-container {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1080px;
+    }
+    
+    .container {
+        width: 60%;
+        max-width: 920px;
+    }
+    
+    .s-container {
+        width: 40%;
+        max-width: 720px;
+    }
+    
+    .col-services {
+        flex-grow: 1;
+        width: calc(100%/3.2);
+    }
+    
+    .col-services:first-child {
+        flex-grow: 2;
+        /* width: calc(100%); */
+    }
+
+}
+
+/******************** UTILITIES ********************/
+/***************************************************/
+
+.btn {
+    border: none;
+    outline: none;
+    border-radius: 2em;
+    line-height: 2em;
+    padding: 0 1em;
+}
+
+.btn.bg-w {
+    color: var(--black-p);
+}
+
+.p-g-15 {
+    padding: 1.5em;
+}
+
+.p-l-15 {
+    padding-left: 1.5em;
+}
+
+.p-v-50 {
+    padding: 5em 0em;
+}
+
+.m-l-15 {
+    margin-left: 1.5em;
+}
+
+.m-b-15 {
+    margin-bottom: 1.5em;
 }
 
 /* Typography ********************/
@@ -171,6 +322,10 @@ body {
 .txt-h1 {
     font-size: 4rem;
     line-height: 1.3rem;
+}
+
+.txt-center {
+    text-align: center;
 }
 
 /*** Colors ********************/
@@ -213,48 +368,29 @@ body {
     background-color: var(--dark-p);
 }
 
-/*** Utilities ********************/
-
-.btn {
-    border: none;
-    outline: none;
-    border-radius: 2em;
-    line-height: 2em;
-    padding: 0 1em;
-}
-
-.btn.bg-w {
-    color: var(--black-p);
-}
-
-.p-l-15 {
-    padding-left: 1.5em;
-}
-
-.p-v-50 {
-    padding: 5em 0em;
-}
-
-.m-l-15 {
-    margin-left: 1.5em;
-}
 
 /******************** HEADER ********************/
 /************************************************/
 
 header {
+    width: 100%;
     height: var(--height-h);
     color: var(--white-p);
     background-color: var(--cyan-p);
     display: flex;
     align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
 }
 
 header li {
     display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
 
     header li {
         display: inline-block;
@@ -266,14 +402,58 @@ header li {
 
 }
 
-@media screen and (min-width: 992px) {
-    
-}
-
 /******************** MAIN ********************/
 /**********************************************/
 
 main {
+
+}
+
+/* MAIN - Hero Section ********************/
+
+@media screen and (min-width: 768px) {
+
+    .hero-container {
+        display: flex;
+        align-items: end;
+        gap: 5vw;
+    }
+
+}
+
+/* MAIN - Testimonials Section ********************/
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 5vw;
+}
+
+@media screen and (min-width: 768px) {
+
+    .testimonial-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+}
+
+/* MAIN -  Section ********************/
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 5vw;
+}
+
+@media screen and (min-width: 768px) {
+
+    .testimonial-container {
+        flex-direction: row;
+        align-items: center;
+    }
 
 }
 
