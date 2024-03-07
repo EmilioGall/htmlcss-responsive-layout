@@ -148,116 +148,6 @@ button {
 
 }
 
-/* Layout - Services Section ********************/
-
-.col-services {
-    background-color: var(--lightcyan-p);
-    width: 100%;
-        
-    /* debug */
-    min-height: 300px;
-}
-
-@media screen and (min-width: 768px) {
-
-    .col-services {
-        width: calc(100%/3);
-    }
-    
-    .col-services:first-child {
-        flex-grow: 2;
-        /* width: 65%; */
-    }
-
-}
-
-@media screen and (min-width: 992px) {
- 
-    .col-services {
-        flex-grow: 1;
-        width: calc(100%/3.2);
-    }
-    
-    .col-services:first-child {
-        flex-grow: 2;
-        /* width: calc(100%); */
-    }
-
-}
-
-/* Layout - Hero Section ********************/
-
-
-
-/* Layout - Testimonials Section ********************/
-
-.col-testimonials {
-    background-color: var(--lightcyan-p);
-    width: 100%;
-        
-    /* debug */
-    min-height: 300px;
-}
-
-@media screen and (min-width: 768px) {
-
-    .l-container {
-        width: 90%;
-        margin: 0 auto;
-        max-width: 1080px;
-    }
-    
-    .container {
-        width: 90%;
-        max-width: 920px;
-    }
-    
-    .s-container {
-        width: 40%;
-        max-width: 720px;
-    }
-
-    .col-services {
-        width: calc(100%/3);
-    }
-    
-    .col-services:first-child {
-        flex-grow: 2;
-        /* width: 65%; */
-    }
-
-}
-
-@media screen and (min-width: 992px) {
-
-    .l-container {
-        width: 90%;
-        margin: 0 auto;
-        max-width: 1080px;
-    }
-    
-    .container {
-        width: 60%;
-        max-width: 920px;
-    }
-    
-    .s-container {
-        width: 40%;
-        max-width: 720px;
-    }
-    
-    .col-services {
-        flex-grow: 1;
-        width: calc(100%/3.2);
-    }
-    
-    .col-services:first-child {
-        flex-grow: 2;
-        /* width: calc(100%); */
-    }
-
-}
-
 /******************** UTILITIES ********************/
 /***************************************************/
 
@@ -409,11 +299,49 @@ main {
 
 }
 
+
+/* MAIN - Services Section ********************/
+
+.col-services {
+    background-color: var(--lightcyan-p);
+    width: 100%;
+        
+    /* debug */
+    min-height: 300px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .col-services {
+        width: calc(100%/3);
+    }
+    
+    .col-services:first-child {
+        flex-grow: 2;
+        /* width: 65%; */
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+ 
+    .col-services {
+        flex-grow: 1;
+        width: calc(100%/3.2);
+    }
+    
+    .col-services:first-child {
+        flex-grow: 2;
+        /* width: calc(100%); */
+    }
+
+}
+
 /* MAIN - Hero Section ********************/
 
 @media screen and (min-width: 768px) {
 
-    .hero-container {
+    .col-hero {
         display: flex;
         align-items: end;
         gap: 5vw;
@@ -423,7 +351,7 @@ main {
 
 /* MAIN - Testimonials Section ********************/
 
-.testimonial-container {
+.col-testimonial {
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -432,27 +360,32 @@ main {
 
 @media screen and (min-width: 768px) {
 
-    .testimonial-container {
+    .col-testimonial {
         flex-direction: row;
         align-items: center;
     }
 
 }
 
-/* MAIN -  Section ********************/
+/* MAIN - Benefits Section ********************/
 
-.testimonial-container {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    gap: 5vw;
+.col-benefit {
+    background-color: var(--white-p);
+    color: var(--lightpurple-p);
+    padding: 1.5em;
+    width: 100%;
 }
 
 @media screen and (min-width: 768px) {
 
-    .testimonial-container {
-        flex-direction: row;
-        align-items: center;
+    .grid-benefits {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3vw
+    }
+
+    .col-benefit {
+        width: 25%;
     }
 
 }
