@@ -1,4 +1,5 @@
-/* RESET */
+/******************** RESET ********************/
+/***********************************************/
 
 :root {
     --black-p: rgba(0, 0, 0, 1);
@@ -31,9 +32,25 @@ menu {
     list-style-type: none;
 }
 
-/* COMMON */
+a {
+    display: inline-block;
+    color:inherit;
+    text-decoration: none;
+}
 
-/* Flex-container */
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+/******************** COMMON ********************/
+/************************************************/
+
+/* Flex-container ********************/
 
 .flex {
     display: flex;
@@ -63,10 +80,11 @@ menu {
     align-items: center;
 }
 
-/* Layout */
+/* Layout ********************/
 
 .l-container {
-    width: 70%;
+    width: 90%;
+    margin: 0 auto;
     max-width: 1200px;
 }
 
@@ -84,7 +102,7 @@ menu {
     width: calc(100%/3);
 }
 
-/* Typography */
+/* Typography ********************/
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -115,7 +133,7 @@ body {
     line-height: 1.3rem;
 }
 
-/* Colors */
+/*** Colors ********************/
 
 .txt-w {
     color: var(--white-p);
@@ -133,7 +151,7 @@ body {
     color: var(--yellow-p);
 }
 
-/* Background Colors */
+/*** Background Colors ********************/
 
 .bg-w {
     background-color: var(--white-p);
@@ -155,15 +173,50 @@ body {
     background-color: var(--dark-p);
 }
 
-/* Utilities */
-
-.a-clean {
-    display: inline-block;
-    color:inherit;
-    text-decoration: none;
-}
+/*** Utilities ********************/
 
 .btn-clean {
     border: none;
     outline: none;
 }
+
+/******************** HEADER ********************/
+/************************************************/
+
+header {
+    height: var(--height-h);
+    color: var(--white-p);
+    background-color: var(--cyan-p);
+    display: flex;
+    align-items: center;
+}
+
+header menu li {
+    display: none;
+}
+
+/******************** MAIN ********************/
+/**********************************************/
+
+main {
+
+}
+
+/******************** FOOTER ********************/
+/************************************************/
+
+footer {
+
+}
+
+/******************** MEDIA QUERIES ********************/
+/*******************************************************/
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 992px) {
+    
+}
+
