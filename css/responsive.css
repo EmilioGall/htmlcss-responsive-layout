@@ -1,0 +1,116 @@
+/******************** LAYOUT ********************/
+/************************************************/
+
+@media screen and (min-width: 768px) {
+
+    .l-container {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1080px;
+    }
+    
+    .container {
+        width: 90%;
+        max-width: 920px;
+    }
+    
+    .s-container {
+        width: 40%;
+        max-width: 720px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .l-container {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1080px;
+    }
+    
+    .container {
+        width: 60%;
+        max-width: 920px;
+    }
+    
+    .s-container {
+        width: 40%;
+        max-width: 720px;
+    }
+
+}
+
+/******************** HEADER ********************/
+/************************************************/
+
+@media screen and (min-width: 992px) {
+
+    header li {
+        display: inline-block;
+    }
+
+    header button {
+        display: none;
+    }
+
+}
+
+/******************** MAIN ********************/
+/**********************************************/
+
+/* MAIN - Services Section ********************/
+
+@media screen and (min-width: 768px) {
+
+    .col-services {
+        width: calc(100%/3);
+    }
+    
+    .col-services:first-child {
+        flex-grow: 2;
+        /* width: 65%; */
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+ 
+    .col-services {
+        flex-grow: 1;
+        width: calc(100%/3.2);
+    }
+    
+    .col-services:first-child {
+        flex-grow: 2;
+        /* width: calc(100%); */
+    }
+
+}
+
+/* MAIN - Testimonials Section ********************/
+
+@media screen and (min-width: 768px) {
+
+    .col-testimonial {
+        flex-direction: row;
+        align-items: center;
+    }
+
+}
+
+/* MAIN - Benefits Section ********************/
+
+@media screen and (min-width: 768px) {
+
+    .grid-benefits {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3vw
+    }
+
+    .col-benefit {
+        width: 25%;
+    }
+
+}

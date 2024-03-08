@@ -108,46 +108,6 @@ button {
     border-radius: 5vw;
 }
 
-@media screen and (min-width: 768px) {
-
-    .l-container {
-        width: 90%;
-        margin: 0 auto;
-        max-width: 1080px;
-    }
-    
-    .container {
-        width: 90%;
-        max-width: 920px;
-    }
-    
-    .s-container {
-        width: 40%;
-        max-width: 720px;
-    }
-
-}
-
-@media screen and (min-width: 992px) {
-
-    .l-container {
-        width: 90%;
-        margin: 0 auto;
-        max-width: 1080px;
-    }
-    
-    .container {
-        width: 60%;
-        max-width: 920px;
-    }
-    
-    .s-container {
-        width: 40%;
-        max-width: 720px;
-    }
-
-}
-
 /******************** UTILITIES ********************/
 /***************************************************/
 
@@ -280,25 +240,8 @@ header li {
     display: none;
 }
 
-@media screen and (min-width: 992px) {
-
-    header li {
-        display: inline-block;
-    }
-
-    header button {
-        display: none;
-    }
-
-}
-
 /******************** MAIN ********************/
 /**********************************************/
-
-main {
-
-}
-
 
 /* MAIN - Services Section ********************/
 
@@ -308,33 +251,6 @@ main {
         
     /* debug */
     min-height: 300px;
-}
-
-@media screen and (min-width: 768px) {
-
-    .col-services {
-        width: calc(100%/3);
-    }
-    
-    .col-services:first-child {
-        flex-grow: 2;
-        /* width: 65%; */
-    }
-
-}
-
-@media screen and (min-width: 992px) {
- 
-    .col-services {
-        flex-grow: 1;
-        width: calc(100%/3.2);
-    }
-    
-    .col-services:first-child {
-        flex-grow: 2;
-        /* width: calc(100%); */
-    }
-
 }
 
 /* MAIN - Hero Section ********************/
@@ -358,15 +274,6 @@ main {
     gap: 5vw;
 }
 
-@media screen and (min-width: 768px) {
-
-    .col-testimonial {
-        flex-direction: row;
-        align-items: center;
-    }
-
-}
-
 /* MAIN - Benefits Section ********************/
 
 .col-benefit {
@@ -374,20 +281,6 @@ main {
     color: var(--lightpurple-p);
     padding: 1.5em;
     width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-
-    .grid-benefits {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 3vw
-    }
-
-    .col-benefit {
-        width: 25%;
-    }
-
 }
 
 /******************** FOOTER ********************/
