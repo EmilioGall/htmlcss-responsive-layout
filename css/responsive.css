@@ -80,14 +80,16 @@
 
 @media screen and (min-width: 768px) {
 
-    .grid-benefits {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 3vw
+    #benefits .box {
+        width: calc((100% - var(--gap-p)) / 2);
     }
 
-    .col-benefit {
-        width: 25%;
+}
+
+@media screen and (min-width: 992px) {
+
+    #benefits .box {
+        width: calc((100% - 2 * var(--gap-p)) / 3);
     }
 
 }
