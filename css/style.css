@@ -98,7 +98,7 @@ button {
 .container {
     width: 90%;
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 800px;
 }
 
 .s-container {
@@ -108,7 +108,7 @@ button {
 }
 
 .section-main {
-    padding: 2em 0em 5em;
+    padding: 5em 0em 5em;
 }
 
 .smooth-corners {
@@ -146,6 +146,14 @@ button {
     padding-left: 1.5em;
 }
 
+.p-b-1 {
+    padding-bottom: 2em;
+}
+
+.p-b-h4 {
+    padding-bottom: 1.2em;
+}
+
 .p-b-h3 {
     padding-bottom: 1.2em;
 }
@@ -154,16 +162,12 @@ button {
     padding-bottom: 2em;
 }
 
-.p-b-1 {
-    padding-bottom: 2em;
-}
-
 .p-b-h1 {
     padding-bottom: 4em;
 }
 
 .m-v-h {
-    margin-top: var(--height-h);
+    margin-top: calc(var(--height-h) - 2rem);
 }
 
 .m-l-15 {
@@ -192,6 +196,11 @@ body {
 .txt-1 {
     font-size: calc(.5vw + .6rem);
     line-height: calc(.5vw + 1.2rem);
+}
+
+.txt-h4 {
+    font-size: calc(.4vw + .8rem);
+    line-height: calc(.5vw + 1.3rem);
 }
 
 .txt-h3 {
@@ -287,26 +296,45 @@ header li {
     padding: 40px;
 }
 
+#services .box:first-child {
+    padding: 40px 40px 0px;
+}
+
 #services .box + .box {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+#services .box:first-child div:nth-child(2){
+    max-width: 50%;
+}
+
 #services img {
-    position: relative;
     display: block;
-    top: 40px;
-    max-width: 300px;
 }
 
 #services .icon {
-    font-size: calc(5vw + 3rem);
+    font-size: calc(1vw + 4rem);
     color: var(--cyan-p);
     margin-bottom: calc(1vw + 1rem);
 }
 
-/* MAIN - Hero Section ********************/
+/* MAIN - Planning Section ********************/
+
+#planning .box:nth-child(2) {
+    padding: 1.5em 3em;
+    margin-top: 1.5rem;
+}
+
+#planning i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    background-color: var(--lightpurple-p);
+}
 
 /* MAIN - Testimonials Section ********************/
 
