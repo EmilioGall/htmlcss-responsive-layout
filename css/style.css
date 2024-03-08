@@ -13,7 +13,7 @@
 
     --height-h: 4rem;
 
-    --gap-p: 3vw;
+    --gap-p: 4vw;
 }
 
 * {
@@ -52,6 +52,12 @@ button {
 
 /******************** COMMON ********************/
 /************************************************/
+
+/* Position ********************/
+
+.rel {
+    position: relative;
+}
 
 /* Flex-container ********************/
 
@@ -347,7 +353,6 @@ header li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5vw;
 }
 
 #testimonials img {
@@ -365,6 +370,24 @@ header li {
     color: var(--lightpurple-p);
     padding: 1.5em;
     width: 100%;
+}
+
+/* MAIN - About Us Section ********************/
+
+
+#about img {
+    width: calc(100px + 10vw);
+    aspect-ratio: 1;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#about img + i {
+    position: absolute;
+    top: 0;
+    left: calc(60px + 10vw);
+
 }
 
 /******************** FOOTER ********************/

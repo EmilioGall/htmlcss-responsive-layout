@@ -92,4 +92,24 @@
         width: calc((100% - 2 * var(--gap-p)) / 3);
     }
 
+    #benefits .box {
+        width: calc((100% / 3) - (2 * var(--gap-p) / 2));
+    }
+
+}
+
+/* MAIN - AboutUS Section ********************/
+
+@media screen and (min-width: 768px) {
+
+    #about .box:last-child {
+        width: 80vw;
+    }
+
+    #about .l-container {
+        display: flex;
+        gap: var(--gap-p);
+        justify-content: space-between;
+    }
+
 }
