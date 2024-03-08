@@ -13,7 +13,7 @@
 
     --height-h: 4rem;
 
-    --gap-p: 4vw;
+    --gap-p: 3vw;
 }
 
 * {
@@ -86,24 +86,29 @@ button {
     align-items: center;
 }
 
-/* Layout ********************/
+/******************** LAYOUT ********************/
+/************************************************/
 
 .l-container {
     width: 90%;
     margin: 0 auto;
-    max-width: 1080px;
+    max-width: 900px;
 }
 
 .container {
     width: 90%;
     margin: 0 auto;
-    max-width: 920px;
+    max-width: 700px;
 }
 
 .s-container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
-    max-width: 720px;
+    max-width: 500px;
+}
+
+.section-main {
+    padding: 2em 0em 5em;
 }
 
 .smooth-corners {
@@ -121,6 +126,14 @@ button {
     padding: .3em 1.3em;
 }
 
+.btn-l {
+    border: none;
+    outline: none;
+    border-radius: 2em;
+    line-height: 2em;
+    padding: .2em 2em;
+}
+
 .btn.bg-w {
     color: var(--black-p);
 }
@@ -133,10 +146,6 @@ button {
     padding-left: 1.5em;
 }
 
-.p-v-50 {
-    padding: 5em 0em;
-}
-
 .p-b-h3 {
     padding-bottom: 1.2em;
 }
@@ -145,8 +154,16 @@ button {
     padding-bottom: 2em;
 }
 
+.p-b-1 {
+    padding-bottom: 2em;
+}
+
 .p-b-h1 {
     padding-bottom: 4em;
+}
+
+.m-v-h {
+    margin-top: var(--height-h);
 }
 
 .m-l-15 {
@@ -168,28 +185,29 @@ body {
 }
 
 .txt-0 {
-    font-size: 0.8rem;
+    font-size: calc(.5vw + .5rem);
+    font-weight: 100;
 }
 
 .txt-1 {
-    font-size: 1vw + .5rem;
-    line-height: 1.3rem;
+    font-size: calc(.5vw + .6rem);
+    line-height: calc(.5vw + 1.2rem);
 }
 
 .txt-h3 {
-    font-size: 1.2rem;
-    line-height: 1.3rem;
+    font-size: calc(.5vw + 1rem);
+    line-height: calc(.5vw + 1.3rem);
     font-weight: 600;
 }
 
 .txt-h2 {
-    font-size: 2rem;
-    line-height: 1.3rem;
+    font-size: calc(.5vw + 1.4rem);
+    line-height: calc(.5vw + 1.8rem);
 }
 
 .txt-h1 {
-    font-size: 4rem;
-    line-height: 1.3rem;
+    font-size: calc(1vw + 2.5rem);
+    line-height: 3rem;
 }
 
 .txt-center {
@@ -263,13 +281,29 @@ header li {
 
 /* MAIN - Services Section ********************/
 
-.col-services {
+#services .box {
     background-color: var(--lightcyan-p);
     width: 100%;
-    padding: 2em;
-        
-    /* debug */
-    min-height: 300px;
+    padding: 40px;
+}
+
+#services .box + .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#services img {
+    position: relative;
+    display: block;
+    top: 40px;
+    max-width: 300px;
+}
+
+#services .icon {
+    font-size: calc(5vw + 3rem);
+    color: var(--cyan-p);
+    margin-bottom: calc(1vw + 1rem);
 }
 
 /* MAIN - Hero Section ********************/
