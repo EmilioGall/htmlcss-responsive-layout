@@ -12,6 +12,8 @@
     --dark-p: rgba(253, 193, 95, 1);
 
     --height-h: 4rem;
+
+    --gap-p: 4vw;
 }
 
 * {
@@ -61,7 +63,7 @@ button {
 }
 
 .f-gap {
-    gap: 3vw;
+    gap: var(--gap-p);
 }
 
 .f-wrap {
@@ -116,7 +118,7 @@ button {
     outline: none;
     border-radius: 2em;
     line-height: 2em;
-    padding: 0 1em;
+    padding: .3em 1.3em;
 }
 
 .btn.bg-w {
@@ -135,8 +137,24 @@ button {
     padding: 5em 0em;
 }
 
+.p-b-h3 {
+    padding-bottom: 1.2em;
+}
+
+.p-b-h2 {
+    padding-bottom: 2em;
+}
+
+.p-b-h1 {
+    padding-bottom: 4em;
+}
+
 .m-l-15 {
     margin-left: 1.5em;
+}
+
+.m-r-5 {
+    margin-right: .5em;
 }
 
 .m-b-15 {
@@ -248,22 +266,13 @@ header li {
 .col-services {
     background-color: var(--lightcyan-p);
     width: 100%;
+    padding: 2em;
         
     /* debug */
     min-height: 300px;
 }
 
 /* MAIN - Hero Section ********************/
-
-@media screen and (min-width: 768px) {
-
-    .col-hero {
-        display: flex;
-        align-items: end;
-        gap: 5vw;
-    }
-
-}
 
 /* MAIN - Testimonials Section ********************/
 

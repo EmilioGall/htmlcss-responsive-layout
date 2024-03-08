@@ -64,12 +64,11 @@
 @media screen and (min-width: 768px) {
 
     .col-services {
-        width: calc(100%/3);
+        width: calc((100% - (2 * var(--gap-p))) / 3);
     }
     
     .col-services:first-child {
-        flex-grow: 2;
-        /* width: 65%; */
+        width: calc(100% - var(--gap-p) - ((100% - (2 * var(--gap-p))) / 3));
     }
 
 }
@@ -77,13 +76,23 @@
 @media screen and (min-width: 992px) {
  
     .col-services {
-        flex-grow: 1;
-        width: calc(100%/3.2);
+        width: calc((100% - (2 * var(--gap-p))) / 3);
     }
     
     .col-services:first-child {
-        flex-grow: 2;
-        /* width: calc(100%); */
+        width: calc(100% - var(--gap-p) - ((100% - (2 * var(--gap-p))) / 3));
+    }
+
+}
+
+/* MAIN - Hero Section ********************/
+
+@media screen and (min-width: 768px) {
+
+    .col-hero {
+        display: flex;
+        align-items: end;
+        gap: 5vw;
     }
 
 }
