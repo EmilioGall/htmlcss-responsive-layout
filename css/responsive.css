@@ -74,6 +74,14 @@
         align-items: center;
     }
 
+    #testimonials .box figure img {
+        margin-right: 80px;
+    }
+
+    #testimonials .box div blockquote {
+        display: block;
+    }
+
 }
 
 /* MAIN - Benefits Section ********************/

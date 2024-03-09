@@ -9,7 +9,7 @@
     --cyan-p: rgba(0, 132, 253, 1);
     --lightpurple-p: rgba(151, 146, 228, 1);
     --yellow-p: rgba(253, 193, 95, 1);
-    --dark-p: rgba(253, 193, 95, 1);
+    --dark-p: rgba(51, 51, 51, 1);
 
     --height-h: 4rem;
 
@@ -111,7 +111,7 @@ button {
 .s-container {
     width: 70%;
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 500px;
 }
 
 .section-main {
@@ -139,10 +139,6 @@ button {
     border-radius: 2em;
     line-height: 2em;
     padding: .2em 2em;
-}
-
-.btn.bg-w {
-    color: var(--black-p);
 }
 
 .p-g-15 {
@@ -347,6 +343,10 @@ header li {
     background-color: var(--lightpurple-p);
 }
 
+#planning .btn.bg-w {
+    color: var(--black-p);
+}
+
 /* MAIN - Testimonials Section ********************/
 
 #testimonials .box {
@@ -390,11 +390,25 @@ header li {
 
 }
 
+/* MAIN - CTA Section ********************/
+
+
+#cta a:last-child {
+    text-decoration-line: underline;
+    display: inline;
+}
+
 /******************** FOOTER ********************/
 /************************************************/
 
 footer {
+    background-color: var(--dark-p);
 
+}
+
+footer a {
+    color: var(--lightpurple-p);
+    text-decoration-line: underline;
 }
 
 /******************** EFFECTS ********************/
