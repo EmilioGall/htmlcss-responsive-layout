@@ -13,7 +13,8 @@
 
     --height-h: 4rem;
 
-    --gap-p: 4vw;
+    --gap-p: calc(1vw + 10px);
+    --border-p: 3px;
 }
 
 * {
@@ -145,6 +146,10 @@ button {
     padding: 1.5rem;
 }
 
+.p-h-15 {
+    padding: 0rem 1.5rem;
+}
+
 .p-l-15 {
     padding-left: 1.5rem;
 }
@@ -252,22 +257,27 @@ body {
 
 .bg-w {
     background-color: var(--white-p);
+    border: var(--border-p) solid var(--white-p);
 }
 
 .bg-lc {
     background-color: var(--lightcyan-p);
+    border: var(--border-p) solid var(--lightcyan-p);
 }
 
 .bg-c {
     background-color: var(--cyan-p);
+    border: var(--border-p) solid var(--cyan-p);
 }
 
 .bg-lp {
     background-color: var(--lightpurple-p);
+    border: var(--border-p) solid var(--lightpurple-p);
 }
 
 .bg-d {
     background-color: var(--dark-p);
+    border: var(--border-p) solid var(--dark-p);
 }
 
 
@@ -413,7 +423,73 @@ footer a {
 }
 
 /******************** EFFECTS ********************/
-/*******************************************************/
+/*************************************************/
 
+/******************** COMMON ********************/
 
+.btn.bg-lp:hover, .btn-l.bg-lp:hover {
+    background-color: var(--white-p);
+    border: var(--border-p) solid var(--lightpurple-p);
+    color: var(--lightpurple-p);
+}
 
+.btn.bg-c:hover, .btn-l.bg-c:hover {
+    background-color: var(--lightcyan-p);
+    border: var(--border-p) solid var(--cyan-p);
+    color: var(--cyan-p);
+}
+
+/******************** HEADER ********************/
+
+header .btn:hover {
+    background-color: var(--cyan-p);
+    border: var(--border-p) solid var(--white-p);
+    color: var(--white-p);
+}
+
+header .menu-btn:hover {
+    background-color: var(--white-p);
+    color: var(--dark-p);
+    opacity: 60%;
+    border-radius: calc(var(--height-h) / 2);
+    line-height: calc(var(--height-h) / 2);
+}
+
+/******************** MAIN ********************/
+
+/* Planning Arrow */
+
+#planning .fa-arrow-down-long {
+    position: absolute;
+    bottom: 20px;
+    left: 45%;
+}
+
+#planning .box:hover .fa-arrow-down-long {
+    animation-name: up-down;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes up-down {
+
+    0% {
+        bottom: 20px;
+    }
+
+    50% {
+        bottom: 10px;
+    }
+
+    100% {
+        bottom: 20px;
+    }
+}
+
+/* Planning Arrow */
+
+#cta .btn-l:hover {
+    background-color: var(--lightpurple-p);
+    border: var(--border-p) solid var(--white-p);
+    color: var(--white-p);
+}
